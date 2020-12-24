@@ -7,7 +7,7 @@ Holds all the data about the asset
 */
 class Asset {
 private:
-	double _stockPrice;
+	double _spotPrice;
 	double _strikePrice;	
 	double _time;
 	double _sigma;
@@ -16,20 +16,19 @@ private:
 public:
 	// Constructor
 	Asset();
-	Asset(double stockPrice, double strikePrice, double time, 
+	Asset(double spotPrice, double strikePrice, double time, 
 		double sigma, double interestRate);
-	// Destructor
-	~Asset();
+
 
 
 	// Getters
-	double getStockPrice();
+	double getSpotPrice();
 	double getStrikePrice();
 	double getInterestRate();
 	double getTime();
 	double getSigma();
 	// Setters
-	void setStockPrice(double stockPrice);
+	void setSpotPrice(double spotPrice);
 	void setStrikePrice(double strikePrice);
 	void setInterestRate(double interestRate);
 	void setTime(double time);

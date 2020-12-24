@@ -1,17 +1,20 @@
 #include "Asset.hpp"
 
 // Constructors
+
 Asset::Asset() {
-	_stockPrice = 0;
+	_spotPrice = 0;
 	_strikePrice = 0;
 	_interestRate = 0;
 	_time = 0;
 	_sigma = 0;
 }
-
-Asset::Asset(double stockPrice, double strikePrice, double time,
+/*
+Asset(stockPrice, strikePrice, time, sigma, interestRate)
+*/
+Asset::Asset(double spotPrice, double strikePrice, double time,
 	double sigma, double interestRate) :
-	_stockPrice(stockPrice),
+	_spotPrice(spotPrice),
 	_strikePrice(strikePrice),	
 	_time(time/365),
 	_sigma(sigma),
@@ -21,8 +24,8 @@ Asset::Asset(double stockPrice, double strikePrice, double time,
 }
 
 // Getters
-double Asset::getStockPrice() {
-	return _stockPrice;
+double Asset::getSpotPrice() {
+	return _spotPrice;
 }
 
 double Asset::getStrikePrice() {
@@ -42,8 +45,8 @@ double Asset::getSigma() {
 }
 
 // Setters
-void Asset::setStockPrice(double stockPrice) {
-	_stockPrice = stockPrice;
+void Asset::setSpotPrice(double spotPrice) {
+	_spotPrice = spotPrice;
 }
 
 void Asset::setStrikePrice(double strikePrice) {
