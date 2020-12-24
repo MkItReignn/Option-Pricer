@@ -1,7 +1,14 @@
-
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+#include "../Asset.hpp"
+#include "../BlackScholes.hpp"
+
+int main() {
+	Asset asset(300, 250, 15, 0.15, 0.01);
+	BlackScholes c(asset);
+
+	std::cout << c.getEqn() << std::endl;
+
+
+	return 0;
 }
