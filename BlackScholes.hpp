@@ -5,8 +5,7 @@
 #include "Asset.hpp"
 
 /*
-Holds the math formulas for Black Scholes
-equation
+Holds the math formulas for Black Scholes Model
 */
 
 
@@ -15,7 +14,6 @@ class Asset;
 class BlackScholes {
 private:
 	Asset _asset;
-	double _timeSqrt;
 	double _d1;
 	double _d2;
 
@@ -25,7 +23,6 @@ public:
 	// Setters
 	void setD1();
 	void setD2();
-	void setTimeSqrt();
 
 	
 

@@ -12,6 +12,7 @@ private:
 	double _time;
 	double _sigma;
 	double _interestRate;
+	double _timeSqrt;
 
 public:
 	// Constructor
@@ -27,12 +28,14 @@ public:
 	double getInterestRate();
 	double getTime();
 	double getSigma();
+	double getTimeSqrt();
 	// Setters
 	void setSpotPrice(double spotPrice);
 	void setStrikePrice(double strikePrice);
 	void setInterestRate(double interestRate);
 	void setTime(double time);
 	void setSigma(double sigma);
+
 };
 
 

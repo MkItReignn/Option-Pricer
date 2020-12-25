@@ -1,5 +1,5 @@
 #include "Asset.hpp"
-
+#include <cmath>
 // Constructors
 
 Asset::Asset() {
@@ -8,6 +8,8 @@ Asset::Asset() {
 	_interestRate = 0;
 	_time = 0;
 	_sigma = 0;
+	_timeSqrt = 0;
+
 }
 /*
 Asset(stockPrice, strikePrice, time, sigma, interestRate)
@@ -18,7 +20,8 @@ Asset::Asset(double spotPrice, double strikePrice, double time,
 	_strikePrice(strikePrice),	
 	_time(time/365),
 	_sigma(sigma),
-	_interestRate(interestRate)
+	_interestRate(interestRate),
+	_timeSqrt(sqrt(time/365))
 {
 
 }
@@ -42,6 +45,10 @@ double Asset::getTime() {
 
 double Asset::getSigma() {
 	return _sigma;
+}
+
+double Asset::getTimeSqrt() {
+	return _timeSqrt;
 }
 
 // Setters
