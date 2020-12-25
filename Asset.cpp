@@ -15,39 +15,39 @@ Asset::Asset() {
 Asset(stockPrice, strikePrice, time, sigma, interestRate)
 */
 Asset::Asset(double spotPrice, double strikePrice, double time,
-	double sigma, double interestRate) :
+	double interestRate, double sigma) : // check here later
 	_spotPrice(spotPrice),
 	_strikePrice(strikePrice),	
 	_time(time/365),
-	_sigma(sigma),
-	_interestRate(interestRate),
+	_interestRate(interestRate/100),
+	_sigma(sigma/100),	
 	_timeSqrt(sqrt(time/365))
 {
 
 }
 
 // Getters
-double Asset::getSpotPrice() {
+double Asset::getSpotPrice() const {
 	return _spotPrice;
 }
 
-double Asset::getStrikePrice() {
+double Asset::getStrikePrice() const {
 	return _strikePrice;
 }
 
-double Asset::getInterestRate() {
+double Asset::getInterestRate() const {
 	return _interestRate;
 }
 
-double Asset::getTime() {
+double Asset::getTime() const {
 	return _time;
 }
 
-double Asset::getSigma() {
+double Asset::getSigma() const {
 	return _sigma;
 }
 
-double Asset::getTimeSqrt() {
+double Asset::getTimeSqrt() const {
 	return _timeSqrt;
 }
 

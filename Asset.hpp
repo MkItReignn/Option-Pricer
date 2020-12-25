@@ -1,6 +1,8 @@
 #ifndef ASSET_HPP
 #define ASSET_HPP
 
+
+
 /*
 Holds all the data about the asset
 
@@ -23,12 +25,12 @@ public:
 
 
 	// Getters
-	double getSpotPrice();
-	double getStrikePrice();
-	double getInterestRate();
-	double getTime();
-	double getSigma();
-	double getTimeSqrt();
+	double getSpotPrice() const;
+	double getStrikePrice() const;
+	double getInterestRate() const;
+	double getTime() const;
+	double getSigma() const;
+	double getTimeSqrt() const;
 	// Setters
 	void setSpotPrice(double spotPrice);
 	void setStrikePrice(double strikePrice);

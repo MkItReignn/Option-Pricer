@@ -22,8 +22,8 @@ public:
 	void setD1();
 
 	// Getters
-	double getCallPrice();
-	double getPutPrice();
+	double getCallPrice() const;
+	double getPutPrice() const;
 };
 
 #endif // !BACHELIER_HPP

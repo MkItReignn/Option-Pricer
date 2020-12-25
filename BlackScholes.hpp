@@ -29,9 +29,9 @@ public:
 	// Getters
 	
 	// Get Call Price
-	double getCallPrice();
+	double getCallPrice() const;
 	// Get Put Price
-	double getPutPrice();
+	double getPutPrice() const;
 };
 
 
