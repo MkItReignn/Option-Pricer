@@ -20,17 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Asset.cpp" />
+    <ClCompile Include="Bachelier.cpp" />
     <ClCompile Include="BlackScholes.cpp" />
     <ClCompile Include="src\Option-Pricer.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Asset.hpp" />
     <ClInclude Include="Bachelier.hpp" />
     <ClInclude Include="BlackScholes.hpp" />
     <ClInclude Include="Menu.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Bachelier.cpp" />
+    <ClInclude Include="Utils.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

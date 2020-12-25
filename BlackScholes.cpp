@@ -1,11 +1,7 @@
 #include "BlackScholes.hpp"
-#include <cmath>
-#include <iostream>
 
-double normalCDF(double x) // normal cumulative distribution function
-{
-	return std::erfc(-x / std::sqrt(2)) / 2;
-}
+#include "Utils.hpp"
+#include <iostream>
 
 BlackScholes::BlackScholes(Asset asset) : _asset(asset) 
 {

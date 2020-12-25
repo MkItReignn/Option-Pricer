@@ -1,20 +1,18 @@
 #include "Bachelier.hpp"
-#include <cmath>
+#include "Utils.hpp"
 #include <iostream>
 
-double normalCDF(double x) // normal cumulative distribution function
-{
-	return std::erfc(-x / std::sqrt(2)) / 2;
-}
+
 
 Bachelier::Bachelier(Asset asset) : _asset(asset) {
 	setD1();
-	std::cout << "d1: " << _d1 << std::endl;
+	//std::cout << "Asset get sigma: " << _asset.getSigma() << std::endl;
 }
 
 void Bachelier::setD1() {
 	_d1 = (_asset.getSpotPrice() - _asset.getStrikePrice()) / 
 	(_asset.getSigma() * _asset.getTimeSqrt());
+	std::cout << "d1: " << _d1 << std::endl;
 }
 
 
