@@ -1,4 +1,27 @@
 # Option-Pricer
 
-Give in the money and out the money prices for option contracts x days away. 
-The two different formula that can be used are black scholes model and Bachelier Model
+A console prompt program that utilises the Blak Scholes and Bachelier Model to price an option.
+
+## Features
+
+The program has basic features that allows the user to derive the price of an option using either the Black Scholes model or the Bachelier Model to price an option, once an asset profile is filled via user input.
+
+Input:
+
+- Spot Price ($)
+- Strike Price ($)
+- Expirary date (days)
+- Interest Rates (%)
+- Implied Volatility (%)
+
+Output: 
+
+- Call and Put price of an option in relation to specific model used
+
+## Demo
+
+![[video-to-gif output image]](https://im3.ezgif.com/tmp/ezgif-3-211f192eb9ba.gif)
+
+### References
+
+http://unriskinsight.blogspot.com/2013/10/black-vs-bachelier-revisited.html
