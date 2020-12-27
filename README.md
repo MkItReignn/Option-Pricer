@@ -6,7 +6,7 @@ A console prompt program that utilises the Blak Scholes and Bachelier Model to p
 
 The program has basic features that allows the user to derive the price of an option using either the Black Scholes model or the Bachelier Model to price an option, once an asset profile is filled via user input.
 
-Input:
+**Input**:
 
 - Spot Price ($)
 - Strike Price ($)
@@ -14,7 +14,7 @@ Input:
 - Interest Rates (%)
 - Implied Volatility (%)
 
-Output: 
+**Output**: 
 
 - Call and Put price of an option in relation to specific model used
 
@@ -25,3 +25,4 @@ Output:
 ### References
 
 http://unriskinsight.blogspot.com/2013/10/black-vs-bachelier-revisited.html
+
