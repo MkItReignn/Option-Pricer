@@ -5,28 +5,45 @@
 #include "BlackScholes.hpp"
 #include <string>
 #include <vector>
+
 /* 
 Contains methods so that there is console UI
 */
 
-
 class Menu {
 private:
 
-
 public:
-	// starts the menu
+	/*
+	start()
+	Starts the menu for the user
+	*/
 	void start();
-	// Checks if the user is finished with the program
+
+	/*
+	isDone()
+	Checks if the user is finished with the program
+	*/
 	bool isDone();
-	// Check which model the user wants to use
+
+	/*
+	modelType()
+	Prompts user about what model they would like to use
+	*/
 	std::string modelType();
-	// Grab the asset values needed to put into the models
+
+	/*
+	getAssetValues(string type)
+	Prompts user for input to create asset profile
+	*/
 	std::vector<double> getAssetValues(std::string type);
-	// Output values
+
+	/*
+	returnValues(vector<double> values, string type)
+	Informs user about the information of call and put price
+	derived from asset profile, in the console
+	*/
 	void returnValues(std::vector<double> values, std::string type);
 };
-
-
 
 #endif 

@@ -1,9 +1,6 @@
 #include "Menu.hpp"
 #include <iostream>
-//#include <cstdlib>
-//#include <fstream>
 
-// starts the menu
 void Menu::start() {
 	do {
 		std::string type = modelType();
@@ -15,7 +12,6 @@ void Menu::start() {
 	} while (!isDone());
 }
 
-// Output values
 void Menu::returnValues(std::vector<double> values, std::string type) {
 	Asset a(values[0], values[1], values[2],
 		values[3], values[4]);;
@@ -30,20 +26,20 @@ void Menu::returnValues(std::vector<double> values, std::string type) {
 		std::cout << "The call price of Black Scholes model: " << b.getCallPrice() << std::endl;
 		std::cout << "The put price of Black Scholes model: " << b.getPutPrice() << std::endl;
 	}
-
-
 }
 
-// Checks if the user is finished with the program
 bool Menu::isDone() {
 	std::cout << "Please write 'quit' to exit the program: ";
+
 	std::string response;
 	std::getline(std::cin, response);
+
 	return response == "quit";
 }
-// Check which model the user wants to use
+
 std::string Menu::modelType() {
 	std::string response;
+
 	do {
 		std::cout << "Which model would you like to use Bachelier[Bach] or Black Scholes[Black]: ";
 		response = "";
@@ -52,7 +48,7 @@ std::string Menu::modelType() {
 	
 	return response;
 }
-// Grab the asset values needed to put into the models
+
 std::vector<double> Menu::getAssetValues(std::string type) {
 	
 	std::vector<double> values (5);
@@ -61,7 +57,7 @@ std::vector<double> Menu::getAssetValues(std::string type) {
 	while (i < 5) {
 		switch (i) {
 		case 0:
-			std::cout << "Enter the asset price: ";
+			std::cout << "Enter the spot price of the asset: ";
 			break;
 		case 1:
 			std::cout << "Enter the strike price: ";

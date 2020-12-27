@@ -1,11 +1,8 @@
 #ifndef ASSET_HPP
 #define ASSET_HPP
 
-
-
 /*
 Holds all the data about the asset
-
 */
 class Asset {
 private:
@@ -19,10 +16,12 @@ private:
 public:
 	// Constructor
 	Asset();
+	/*
+	Asset(spotPrice, strikePrice, time, sigma, interestRate)
+	Creating an asset profile that is required to produce an option price
+	*/
 	Asset(double spotPrice, double strikePrice, double time, 
 		double sigma, double interestRate);
-
-
 
 	// Getters
 	double getSpotPrice() const;
@@ -37,8 +36,6 @@ public:
 	void setInterestRate(double interestRate);
 	void setTime(double time);
 	void setSigma(double sigma);
-
 };
-
 
 #endif // !ASSET_HPP

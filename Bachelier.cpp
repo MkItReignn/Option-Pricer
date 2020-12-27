@@ -2,8 +2,6 @@
 #include "Utils.hpp"
 #include <iostream>
 
-
-
 Bachelier::Bachelier(Asset asset) : _asset(asset) {
 	setD1();
 }
@@ -13,7 +11,6 @@ void Bachelier::setD1() {
 	(_asset.getSigma() * _asset.getTimeSqrt());
 	std::cout << "Bachelier d1: " << _d1 << std::endl;
 }
-
 
 double Bachelier::getCallPrice() const {
 	return exp(-_asset.getInterestRate() * _asset.getTime()) * 

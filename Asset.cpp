@@ -1,7 +1,7 @@
 #include "Asset.hpp"
 #include <cmath>
-// Constructors
 
+// Constructors
 Asset::Asset() {
 	_spotPrice = 0;
 	_strikePrice = 0;
@@ -11,20 +11,16 @@ Asset::Asset() {
 	_timeSqrt = 0;
 
 }
-/*
-Asset(stockPrice, strikePrice, time, sigma, interestRate)
-*/
+
 Asset::Asset(double spotPrice, double strikePrice, double time,
-	double interestRate, double sigma) : // check here later
+	double interestRate, double sigma) : 
 	_spotPrice(spotPrice),
 	_strikePrice(strikePrice),	
 	_time(time/365),
 	_interestRate(interestRate/100),
 	_sigma(sigma/100),	
 	_timeSqrt(sqrt(time/365))
-{
-
-}
+{}
 
 // Getters
 double Asset::getSpotPrice() const {

@@ -16,9 +16,17 @@ private:
 
 public:
 	// Constructor
+	/*
+	Bachelier(Asset asset)
+	Pass in asset profile to derive d1
+	*/
 	Bachelier(Asset asset);
 
 	// Setters
+	/*
+	setD1()
+	Derives _d1 and couts its value
+	*/
 	void setD1();
 
 	// Getters

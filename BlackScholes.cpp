@@ -21,7 +21,6 @@ void BlackScholes::setD2() {
 
 }
 
-
 double BlackScholes::getCallPrice() const {
 	return _asset.getSpotPrice() * normalCDF(_d1) -
 		_asset.getStrikePrice() * exp(-_asset.getInterestRate() * _asset.getTime()) *
