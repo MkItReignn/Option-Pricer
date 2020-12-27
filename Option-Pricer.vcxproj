@@ -19,19 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Asset.cpp" />
-    <ClCompile Include="Bachelier.cpp" />
-    <ClCompile Include="BlackScholes.cpp" />
-    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="src\Asset.cpp" />
+    <ClCompile Include="src\Bachelier.cpp" />
+    <ClCompile Include="src\BlackScholes.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\Option-Pricer.cpp" />
-    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Asset.hpp" />
-    <ClInclude Include="Bachelier.hpp" />
-    <ClInclude Include="BlackScholes.hpp" />
-    <ClInclude Include="Menu.hpp" />
-    <ClInclude Include="Utils.hpp" />
+    <ClInclude Include="header\Asset.hpp" />
+    <ClInclude Include="header\Bachelier.hpp" />
+    <ClInclude Include="header\BlackScholes.hpp" />
+    <ClInclude Include="header\Menu.hpp" />
+    <ClInclude Include="header\Utils.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

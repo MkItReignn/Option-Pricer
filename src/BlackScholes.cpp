@@ -1,6 +1,6 @@
-#include "BlackScholes.hpp"
+#include "../header/BlackScholes.hpp"
 #include <cmath>
-#include "Utils.hpp"
+#include "../header/Utils.hpp"
 #include <iostream>
 
 BlackScholes::BlackScholes(Asset asset) : _asset(asset) 

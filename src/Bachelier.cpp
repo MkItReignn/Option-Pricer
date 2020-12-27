@@ -1,5 +1,5 @@
-#include "Bachelier.hpp"
-#include "Utils.hpp"
+#include "../header/Bachelier.hpp"
+#include "../header/Utils.hpp"
 #include <iostream>
 
 Bachelier::Bachelier(Asset asset) : _asset(asset) {

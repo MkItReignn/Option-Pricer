@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../Menu.hpp"
+#include "../header/Menu.hpp"
 int main() {
 	// Create menu object
 	Menu menu;
