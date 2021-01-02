@@ -10,7 +10,7 @@ The program has basic features that allows the user to derive the price of an op
 
 - Spot Price ($)
 - Strike Price ($)
-- Expirary date (days)
+- Expiry date (days)
 - Interest Rates (%)
 - Implied Volatility (%)
 
