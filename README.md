@@ -22,7 +22,7 @@ The program has basic features that allows the user to derive the price of an op
 
 [![](http://img.youtube.com/vi/BTva92AjbvA/0.jpg)](http://www.youtube.com/watch?v=BTva92AjbvA "Option-Pricer Demo")
 
-### References
+## References
 
 http://unriskinsight.blogspot.com/2013/10/black-vs-bachelier-revisited.html
 
