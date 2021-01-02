@@ -20,7 +20,7 @@ The program has basic features that allows the user to derive the price of an op
 
 ## Demo
 
-![[video-to-gif output image]](https://im3.ezgif.com/tmp/ezgif-3-211f192eb9ba.gif)
+[![](http://img.youtube.com/vi/BTva92AjbvA/0.jpg)](http://www.youtube.com/watch?v=BTva92AjbvA "Option-Pricer Demo")
 
 ### References
 
