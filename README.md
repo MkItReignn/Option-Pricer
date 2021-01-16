@@ -1,6 +1,6 @@
 # Option-Pricer
 
-A console prompt program that utilises the Blak Scholes and Bachelier Model to price an option.
+A program that utilises the Blak Scholes and Bachelier Model to price an option.
 
 ## Features
 
